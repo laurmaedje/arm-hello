@@ -4,3 +4,8 @@ version = "0.1.0"
 authors = ["Laurenz"]
 
 [dependencies]
+rlibc = "1.0"
+spin = "0.4.6"
+
+[profile.release]
+panic = "abort"

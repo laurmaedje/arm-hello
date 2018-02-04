@@ -8,6 +8,6 @@ SECTIONS
 
     /* Stack */
     . = ALIGN(8);
-    . = . + 0x1000;
+    . = . + 0x2000;
     stack_top = .;
 }
