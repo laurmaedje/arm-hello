@@ -7,6 +7,12 @@
 global_asm!(include_str!("boot.s"));
 
 
+#[no_mangle]
+pub extern "C" fn main() {
+	
+}
+
+
 #[lang = "eh_personality"]
 extern fn eh_personality() {
 	loop {}
