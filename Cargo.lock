@@ -1,5 +1,5 @@
 [[package]]
-name = "aarch64-hello"
+name = "arm-hello"
 version = "0.1.0"
 dependencies = [
  "rlibc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",

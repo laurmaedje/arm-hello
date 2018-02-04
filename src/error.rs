@@ -10,9 +10,9 @@ extern "C" fn eh_personality() {}
 #[lang = "panic_fmt"]
 #[no_mangle]
 extern "C" fn rust_begin_panic(fmt: ::core::fmt::Arguments, file: &'static str, line: u32) -> ! {
-	println!("error: kernel panic in {} at line {}", file, line);
-	println!("> {}", fmt);
-	loop {}
+    println!("error: kernel panic in {} at line {}", file, line);
+    println!("> {}", fmt);
+    loop {}
 }
 
 #[no_mangle]

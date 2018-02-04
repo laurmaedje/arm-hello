@@ -19,5 +19,5 @@ global_asm!(include_str!("boot.s"));
 /// Kernel entry point
 #[no_mangle]
 pub extern "C" fn main() {
-	println!("Hello World!");
+    println!("Hello World!");
 }
