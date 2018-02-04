@@ -1,4 +1,4 @@
-.globl start
+.globl _start
 
 _start:
 	b .
