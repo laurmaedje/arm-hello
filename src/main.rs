@@ -7,7 +7,8 @@
 global_asm!(include_str!("boot.s"));
 
 
-#[lang = "eh_personality"] extern fn eh_personality() {
+#[lang = "eh_personality"]
+extern fn eh_personality() {
 	loop {}
 }
 
