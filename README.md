@@ -8,6 +8,7 @@ This project depends on
 - [Rust](https://www.rust-lang.org)
 - [Xargo](https://github.com/japaric/xargo)
 - [QEMU](https://www.qemu.org/)
+- [Aarch64-Toolchain](https://packages.ubuntu.com/de/trusty/gcc-aarch64-linux-gnu)
 
 If you have installed these, just run
 ```
