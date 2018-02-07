@@ -8,10 +8,10 @@ qemuflags := -machine virt -m 1024M -cpu cortex-a53 -nographic -s
 all: kernel
 
 clean:
-    cargo clean
+	cargo clean
 
 run: kernel
-    $(qemu) $(qemuflags) -kernel target/$(target)/debug/$(kernel)
+	$(qemu) $(qemuflags) -kernel target/$(target)/debug/$(kernel)
 
 kernel: 
-    RUST_TARGET_PATH=$(shell pwd) xargo build --target $(target)
+	RUST_TARGET_PATH=$(shell pwd) xargo build --target $(target)
